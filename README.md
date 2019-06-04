@@ -1,6 +1,25 @@
 # CCM-CustomContentManager
   Ist eine Bibliothek welche es einem ermöglicht Windows Forms Controls dynamisch zu speichern und zu laden.
 
+# Unterstützte Controls
+``` 
+    Button
+    Label
+    PictureBox
+    TextBox
+    Panel
+    CheckBox
+    ListBox
+    ComboBox
+    RadioButton
+    ProgressBar
+    TreeView
+    ListView
+    LinkLabel
+    NumericUpDown
+    RichTextBox
+```
+
 # Beispiel
 
 # Lizenz
