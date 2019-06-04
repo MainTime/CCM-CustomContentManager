@@ -24,7 +24,7 @@
   ## C#
   Control Speichern:
   ```c#
-      string compressedjson = new CCM_CustomContentManager.toJson().getJson(Panel1);
+    string compressedjson = new CCM_CustomContentManager.toJson().getJson(Panel1);
   ```
   Control Laden:
   ```c#
@@ -33,11 +33,11 @@
   ## VB.Net
   Control Speichern:
   ```vb.net
-  Dim compressedjson As String = New CCM_CustomContentManager.toJson().getJson(Panel1)
+    Dim compressedjson As String = New CCM_CustomContentManager.toJson().getJson(Panel1)
   ```
   Control Laden:
   ```vb.net
-  Me.Controls.Add(New CCM_CustomContentManager.toControl().getControl(compressedjson))
+    Me.Controls.Add(New CCM_CustomContentManager.toControl().getControl(compressedjson))
   ```
   
 # Lizenz
