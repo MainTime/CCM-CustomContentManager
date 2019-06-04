@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CCM_CustomContentManager.toControl">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>toControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCM_CustomContentManager.toJson">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAA=</HashCode>
+      <FileName>toJson.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CCM_CustomContentManager.stype">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEAIAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAAA=</HashCode>
+      <FileName>toJson.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
