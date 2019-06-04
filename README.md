@@ -21,6 +21,16 @@
 ```
 
 # Beispiel
+  ## C#
+  Control Speichern:
+  ```c#
+      string compressedjson = new CCM_CustomContentManager.toJson().getJson(Panel1);
+  ```
+  Control Laden:
+  ```c#
+    this.Controls.Add(new CCM_CustomContentManager.toControl().getControl(compressedjson));
+  ```
+  ## VB.Net
   Control Speichern:
   ```vb.net
   Dim compressedjson As String = New CCM_CustomContentManager.toJson().getJson(Panel1)
