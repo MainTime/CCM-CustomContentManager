@@ -61,7 +61,7 @@
 
             .name = cnt.Name
         End With
-        Return New System.Web.Script.Serialization.JavaScriptSerializer().Serialize(jsS)
+        Return Compress(New System.Web.Script.Serialization.JavaScriptSerializer().Serialize(jsS))
     End Function
     Private Function ImageToBase64(ByVal oImage As Drawing.Image) As String
         If oImage IsNot Nothing Then
@@ -74,11 +74,21 @@
             Return ("")
         End If
     End Function
+    Private Function Compress(ByVal text As String) As String
+        Dim buffer() As Byte = System.Text.Encoding.UTF8.GetBytes(text)
+        Dim memoryStream = New IO.MemoryStream()
+        Using gZipStream = New IO.Compression.GZipStream(memoryStream, IO.Compression.CompressionMode.Compress, True)
+            gZipStream.Write(buffer, 0, buffer.Length)
+        End Using
+
+        memoryStream.Position = 0
+
+        Dim compressedData = New Byte(memoryStream.Length - 1) {}
+        memoryStream.Read(compressedData, 0, compressedData.Length)
+
+        Dim gZipBuffer = New Byte(compressedData.Length + 4 - 1) {}
+        System.Buffer.BlockCopy(compressedData, 0, gZipBuffer, 4, compressedData.Length)
+        System.Buffer.BlockCopy(BitConverter.GetBytes(buffer.Length), 0, gZipBuffer, 0, 4)
+        Return Convert.ToBase64String(gZipBuffer)
+    End Function
 End Class
-Public Enum stype
-    Button
-    Label
-    PictureBox
-    TextBox
-    Panel
-End Enum
