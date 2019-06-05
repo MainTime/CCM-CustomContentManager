@@ -1,4 +1,9 @@
 ﻿Public Class toJson
+    ''' <summary>
+    ''' Gives you a compressed json string (For me edit json to somethin else)
+    ''' </summary>
+    ''' <param name="cnt"></param>
+    ''' <returns></returns>
     Function getJson(cnt As System.Windows.Forms.Control) As String
         Dim jsS As New ControlStructure
         With jsS

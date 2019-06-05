@@ -1,4 +1,9 @@
 ﻿Public Class toControl
+    ''' <summary>
+    ''' Gives your a ControlStructure
+    ''' </summary>
+    ''' <param name="json"></param>
+    ''' <returns></returns>
     Function getControlStructure(json) As ControlStructure
         json = DecompressString(json)
         Dim obj As ControlStructure = New System.Web.Script.Serialization.JavaScriptSerializer().Deserialize(json, GetType(ControlStructure))
@@ -9,6 +14,11 @@
 
         Return obj
     End Function
+    ''' <summary>
+    ''' Gives you a control from a ControlStructure
+    ''' </summary>
+    ''' <param name="cs"></param>
+    ''' <returns></returns>
     Function getControl(cs As ControlStructure) As Windows.Forms.Control
         Dim workingItem As Windows.Forms.Control
         Select Case cs.strItem
@@ -73,7 +83,11 @@
         Next
         Return workingItem
     End Function
-
+    ''' <summary>
+    ''' Combines getControlStructure() and getControl()
+    ''' </summary>
+    ''' <param name="Json"></param>
+    ''' <returns></returns>
     Function getControl(Json) As Windows.Forms.Control
         Return getControl(getControlStructure(Json))
     End Function
