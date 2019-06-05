@@ -24,7 +24,7 @@
   ## C#
   Control Speichern:
   ```c#
-    string compressedjson = new CCM_CustomContentManager.toJson().getJson(Panel1);
+    string compressedjson = new CCM_CustomContentManager.toJson().getJson(YourControl);
   ```
   Control Laden:
   ```c#
