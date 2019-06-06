@@ -43,7 +43,6 @@
 # Download
 
   Stable: https://github.com/MainTime/CCM-CustomContentManager/releases
-  Pre   : 
   
 # Lizenz
 
