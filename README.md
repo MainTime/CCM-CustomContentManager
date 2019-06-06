@@ -1,5 +1,7 @@
 # CCM-CustomContentManager
   Ist eine Bibliothek welche es einem ermöglicht Windows Forms Controls dynamisch zu speichern und zu laden.
+  
+[![Build Status](https://travis-ci.org/MainTime/CCM-CustomContentManager.svg?branch=master)](https://travis-ci.org/MainTime/CCM-CustomContentManager)
 
 # Unterstützte Controls
 ``` 
