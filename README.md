@@ -35,7 +35,7 @@
   ## VB.Net
   Control Speichern:
   ```vb.net
-    Dim compressedjson As String = New CCM_CustomContentManager.toJson().getJson(Panel1)
+    Dim compressedjson As String = New CCM_CustomContentManager.toJson().getJson(YourControl)
   ```
   Control Laden:
   ```vb.net
