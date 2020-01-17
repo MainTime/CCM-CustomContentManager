@@ -1,3 +1,5 @@
+# Obsolete | Useless
+
 # CCM-CustomContentManager
   Ist eine Bibliothek welche es einem ermöglicht Windows Forms Controls dynamisch zu speichern und zu laden.
   
